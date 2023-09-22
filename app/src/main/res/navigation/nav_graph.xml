@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.menupracticaltestapp.screens.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login"
+            app:destination="@id/listOfVenuesFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/listOfVenuesFragment"
+        android:name="com.example.menupracticaltestapp.screens.listOfVenues.ListOfVenuesFragment"
+        android:label="fragment_list_of_venues"
+        tools:layout="@layout/fragment_list_of_venues">
+        <action
+            android:id="@+id/action_details"
+            app:destination="@id/venueDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/venueDetailsFragment"
+        android:name="com.example.menupracticaltestapp.screens.venueDetails.VenueDetailsFragment"
+        android:label="fragment_venue_details"
+        tools:layout="@layout/fragment_venue_details">
+        <argument
+            android:name="venue"
+            app:argType="com.example.menupracticaltestapp.data.Venue" />
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MenuPracticalTestApp</string>
+
+    <string name="temporarily_unavailable">Temporarily unavailable for digital orders</string>
+    <string name="closed">Closed</string>
+    <string name="easiest_way_to_order">The easiest way to order</string>
+    <string name="no_lines">No lines. No waiting.</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="email_error">Email is not valid</string>
+    <string name="password">Password</string>
+    <string name="password_error">Password field can not be empty</string>
+    <string name="no_venues_found">No venues found</string>
+    <string name="logout">Logout</string>
+    <string name="order_in_advance">• Order in advance</string>
+    <string name="opens">Opens</string>
+    <string name="today">Today</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="at">at</string>
+    <string name="currently_closed">Currently Closed</string>
+
+    <string name="network_connection_lost">Network connection lost</string>
+    <string name="check_network_connection">You are not connected to the internet, please check your connection.</string>
+    <string name="sign_up_error">Sign up error</string>
+    <string name="error">Error</string>
+    <string name="an_error_occurred">An error occurred. Please try again.</string>
+    <string name="location_access_required">Location access required</string>
+    <string name="request_permission">Request permission</string>
+    <string name="open_phone_settings">Open phone settings</string>
+    <string name="app_requires_your_location">Your location is required to match you with venues near you.</string>
+    <string name="enable_location_service">Enable Location Service</string>
+    <string name="enable_location_desc">To allow the system to fetch your location, please enable location services.</string>
+    <string name="enable">Enable</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_s">8dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_s_plus">18dp</dimen>
+    <dimen name="margin_normal">24dp</dimen>
+    <dimen name="margin_larger">31dp</dimen>
+    <dimen name="margin_l">34dp</dimen>
+    <dimen name="margin_xl">46dp</dimen>
+    <dimen name="margin_xxl">64dp</dimen>
+    <dimen name="margin_xxl_plus">76dp</dimen>
+    <dimen name="margin_3xl">128dp</dimen>
+
+    <dimen name="margin_normal_plus">28dp</dimen>
+
+    <dimen name="progress_bar_size">56dp</dimen>
+    <dimen name="one_height">1dp</dimen>
+    <dimen name="login_image_size">124dp</dimen>
+    <dimen name="flexible_component">0dp</dimen>
+    <dimen name="button_height">54dp</dimen>
+    <dimen name="venue_details_layout_height">166dp</dimen>
+    <dimen name="logout_button_height">40dp</dimen>
+    <dimen name="logout_button_width">77dp</dimen>
+
+    <dimen name="text_size_huge">28sp</dimen>
+    <dimen name="text_size_xxl">28sp</dimen>
+    <dimen name="text_size_xl">24sp</dimen>
+    <dimen name="text_size_l_plus">22sp</dimen>
+    <dimen name="text_size_l">20sp</dimen>
+    <dimen name="text_size_normal">17sp</dimen>
+    <dimen name="text_size_smaller">15sp</dimen>
+    <dimen name="text_size_s_plus">14sp</dimen>
+    <dimen name="text_size_s">12sp</dimen>
+
+    <dimen name="radius_tiny">2dp</dimen>
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_s">8dp</dimen>
+    <dimen name="radius_huge">40dp</dimen>
+</resources>

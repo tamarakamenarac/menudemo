@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/venue_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:id="@+id/venue_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_s_plus"
+        android:fontFamily="@font/font_family"
+        tools:text="Ocean Drive Miami"
+        android:textColor="@color/grayText"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/venue_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:fontFamily="@font/font_family"
+        tools:text="230 m"
+        android:textColor="@color/grayText"
+        android:textSize="@dimen/text_size_s_plus"
+        app:layout_constraintTop_toBottomOf="@id/venue_name" />
+
+    <TextView
+        android:id="@+id/venue_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:fontFamily="@font/font_family"
+        tools:text="12 Belgard Road, Tallaght, Miami"
+        android:textColor="@color/textTransparent"
+        android:textSize="@dimen/text_size_s_plus"
+        app:layout_constraintTop_toBottomOf="@id/venue_distance" />
+
+    <TextView
+        android:id="@+id/venue_working_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:fontFamily="@font/font_family"
+        tools:text="Today 09:00 - 22:00"
+        android:textColor="@color/textTransparent"
+        android:textSize="@dimen/text_size_s_plus"
+        app:layout_constraintTop_toBottomOf="@id/venue_address" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/venue_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/venue_working_hours">
+
+        <TextView
+            android:id="@+id/venue_availability_preorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pickup_type_background"
+            android:fontFamily="@font/font_family"
+            android:paddingHorizontal="@dimen/margin_xs"
+            android:layout_marginEnd="@dimen/margin_s"
+            android:text="Preorder"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/venue_availability_curbed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/venue_availability_curbed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pickup_type_background"
+            android:fontFamily="@font/font_family"
+            android:paddingHorizontal="@dimen/margin_xs"
+            android:layout_marginEnd="@dimen/margin_s"
+            android:text="Curbed"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/venue_availability_delivery"
+            app:layout_constraintStart_toEndOf="@id/venue_availability_preorder"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/venue_availability_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pickup_type_background"
+            android:fontFamily="@font/font_family"
+            android:paddingHorizontal="@dimen/margin_xs"
+            android:text="Delivery"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/venue_availability_curbed"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--Not sure if all of the views have the divider, if the last one should not have it would use the divider item decoration.-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_height"
+        app:layout_constraintTop_toBottomOf="@id/venue_availability"
+        android:background="@color/grayTextTransparentFields"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_s_plus"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
